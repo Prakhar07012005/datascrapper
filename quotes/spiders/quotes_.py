@@ -84,6 +84,7 @@ class QuotesSpider(scrapy.Spider):
         syllabus_content = f"Foundation (12 Credits): {foundation_text} Concentration (12 Credits): {concentration_text} Final Dissertation (32 Credits): {dissertation_text}"
         
         yield {
+            'Course Link':course_link,
             'titletext ': title,
             'descriptiontext': description,
             'duration': duration,
